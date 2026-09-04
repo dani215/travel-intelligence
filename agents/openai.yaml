@@ -1,0 +1,8 @@
+interface:
+  display_name: "Travel Intelligence"
+  short_description: "Lokalne podróże, koszty i loty"
+  brand_color: "#0F3D5E"
+  default_prompt: "Use $travel-intelligence to audit and improve my travel plan with current local research."
+
+policy:
+  allow_implicit_invocation: true
