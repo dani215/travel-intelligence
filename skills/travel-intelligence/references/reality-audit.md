@@ -14,7 +14,7 @@ List the material claims behind the recommendation. Mark claims that are time-se
 | Medium: venues, food prices, opening hours, local customs, transit | Use current official or local sources and record checked time |
 | High: flights, bookings, money, safety, legal rules, medical/accessibility needs | Verify current details from primary sources where possible, cross-check conflicts, and show assumptions and failure modes |
 
-If browsing or source access is unavailable, say so and mark unstable claims as indicative or unverified. Do not simulate live research.
+If browsing or source access is unavailable, say so and mark unstable claims as indicative or unverified. Do not simulate live research. Link directly to the source for material checked claims. For high-risk claims, prefer primary sources (official operator, airline, government, or venue); if none is accessible, identify that limitation and do not present the claim as confirmed.
 
 ## 3. Source hierarchy
 
@@ -30,9 +30,11 @@ Prefer, in order: official operators and government sources; airline or venue pa
 
 Use this compact ledger when the decision is material:
 
-| Claim | Source type | Checked at | Status | Confidence | Final treatment |
-|---|---|---|---|---|---|
-| … | official/local/anecdotal/unavailable | date and time | confirmed/corroborated/indicative/inference/unknown | high/medium/low | state/use/qualify/remove |
+| Claim | Direct source(s) | Source type | Checked at | Status | Confidence | Final treatment |
+|---|---|---|---|---|---|---|
+| … | URL(s), or “no accessible source” | official/local/anecdotal/unavailable | date and time | confirmed/corroborated/indicative/inference/unknown | high/medium/low | state/use/qualify/remove |
+
+Provide direct links for material claims that a reader may need to verify. Link to the specific timetable, fare, rule, menu, or operator page where possible, not merely a homepage or search-results page. For high-risk claims, cite the primary source and identify any missing confirmation. If sources conflict, link both sources and explain which one is authoritative for the decision.
 
 ## 5. Resolve conflicts
 
@@ -48,4 +50,4 @@ Compare publication or update dates, geographic fit, primary-source status, exac
 
 ## 7. Final gate
 
-Before answering, confirm: the recommendation is direct; material inputs are explicit; arithmetic is correct; unstable facts have a checked-at boundary; source types are clear; unsupported claims are removed or qualified; conflicts and risks are visible; and the final version is the most useful verified answer for the user's actual constraints.
+Before answering, confirm: the answer is direct; material inputs are explicit; arithmetic is correct; unstable facts have a checked-at boundary; important claims include direct source links; high-risk claims use primary sources where possible; unsupported claims are removed or qualified; conflicts and risks are visible; and the final version is the most useful verified answer for the user's actual constraints.
