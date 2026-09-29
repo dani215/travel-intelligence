@@ -1,4 +1,4 @@
-name: Validate skill
+name: Validate plugin
 
 on:
   push:
@@ -17,5 +17,5 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate package
-        run: python scripts/validate_skill.py .
+      - name: Validate Agent Plugins package
+        run: python scripts/validate_plugin.py .
