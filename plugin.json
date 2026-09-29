@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "travel-intelligence",
+  "version": "1.0.0",
+  "description": "Evidence-led travel planning with local context, realistic door-to-door costs, current transport research, and candid plan audits.",
+  "author": {
+    "name": "Daniel Asztemborski",
+    "url": "https://github.com/dani215"
+  },
+  "homepage": "https://github.com/dani215/travel-intelligence",
+  "repository": "https://github.com/dani215/travel-intelligence",
+  "license": "MIT",
+  "keywords": ["travel", "travel-planning", "flight-research", "local-travel", "agent-skill"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Travel Intelligence",
+        "shortDescription": "Lokalne podróże, loty i realne koszty",
+        "longDescription": "Planowanie i audyt podróży oparte na aktualnych źródłach, lokalnym kontekście i pełnych kosztach. Wtyczka rozdziela potwierdzone dane od szacunków, weryfikuje transport i loty oraz krytycznie sprawdza ryzyka planu.",
+        "developerName": "Daniel Asztemborski",
+        "category": "Lifestyle",
+        "capabilities": ["Research", "Interactive"],
+        "defaultPrompt": [
+          "Użyj Travel Intelligence, aby sprawdzić aktualne loty i pełny koszt podróży door-to-door.",
+          "Zaplanuj lokalny, realistyczny wyjazd dopasowany do mojego budżetu i tempa.",
+          "Przeprowadź krytyczny audyt mojego planu podróży i wskaż ukryte koszty oraz ryzyka."
+        ]
+      }
+    }
+  }
+}

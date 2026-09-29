@@ -1,38 +1,17 @@
-# Publishing to GitHub
+# Publishing and maintenance
 
-This repository is prepared for a public GitHub repository named `travel-intelligence`.
+This repository is the source package for the `travel-intelligence` Agent Plugins 1.0 plugin.
 
-## Recommended repository settings
+## Package layout
 
-- Visibility: public if the goal is community reuse.
-- Repository name: `travel-intelligence`.
-- Description: `Evidence-led local travel planning skill for Codex and ChatGPT.`
-- Suggested topics: `codex`, `chatgpt`, `agent-skill`, `travel-planning`, `flight-search`, `local-travel`.
-- Keep secrets, personal travel data, API keys, browser exports, and private source material out of the repository.
+The repository root is the plugin root. It contains `plugin.json` and `skills/travel-intelligence/SKILL.md`; compatible clients discover the skill at that fixed location. Installation and marketplace registration remain client-specific.
 
-## Create and push
+## Before publishing a change
 
-Create an empty repository on GitHub first, then run from this directory:
+1. Run `python scripts/validate_plugin.py .`.
+2. Review the capability index when promoting a safe, reusable capability.
+3. Keep credentials, private travel data, browser exports, and API keys out of the repository.
+4. Update the semantic version in `plugin.json` for a release.
+5. Commit the change and push it to `main`.
 
-```bash
-git init -b main
-git add .
-git commit -m "Initial release of Travel Intelligence skill"
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/travel-intelligence.git
-git push -u origin main
-```
-
-If Git asks for an identity, configure it locally for this repository before committing:
-
-```bash
-git config user.name "Your Name"
-git config user.email "your-email@example.com"
-```
-
-## Verify after publishing
-
-Open the repository page and confirm that `SKILL.md`, `agents/openai.yaml`, all three reference files, `README.md`, `LICENSE`, and the validation workflow are visible. The Actions tab should show the validation workflow passing.
-
-## Release practice
-
-For future changes, update the capability index when a safe capability is promoted, run the local validator, commit with a meaningful message, and push to `main`. Changes involving booking, payment, private data, permissions, or autonomous actions must not be added silently.
+Changes involving booking, payment, private data, permissions, external tools, or autonomous actions must not be added silently.
