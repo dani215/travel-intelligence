@@ -27,9 +27,9 @@ The plugin root is this directory, containing `plugin.json` and `skills/travel-i
 
 ## Reality-first policy
 
-Every final answer passes a risk-scaled reality audit. Prices, schedules, opening hours, fares, safety rules, and local conditions are checked against current sources when possible. The skill never claims personal local identity or claims to have searched when source access was unavailable.
+Every final answer passes a risk-scaled reality audit. Prices, schedules, opening hours, fares, safety rules, and local conditions are checked against current sources when possible. Material claims should link to direct sources; high-risk claims should use primary sources where possible. If sources conflict or cannot be accessed, the answer explains the limitation rather than inventing confirmation. The skill never claims personal local identity or claims to have searched when source access was unavailable.
 
-For flights, “cheapest” is split into three decisions: absolute cheapest, cheapest sensible option, and best value. The comparison includes baggage, ground transport, parking or fuel, pre-flight lodging, airport transfers, and self-transfer risk.
+For flights, “cheapest” is split into three decisions: absolute cheapest, cheapest sensible option, and best value. The comparison includes baggage, ground transport, parking or fuel, pre-flight lodging, airport transfers, and self-transfer risk. Critical missing details such as dates, origin, passenger count, or baggage trigger a clarifying question when they prevent a meaningful comparison.
 
 ## Project structure
 
@@ -40,6 +40,7 @@ skills/travel-intelligence/references/
   capability-index.md
   capability-learning.md
   reality-audit.md
+tests/behavioral-cases.md
 scripts/validate_plugin.py
 .github/workflows/validate.yml
 ```
@@ -49,6 +50,8 @@ scripts/validate_plugin.py
 ```bash
 python scripts/validate_plugin.py .
 ```
+
+The validator checks package structure and selected manifest field types. It does not validate complete host compatibility or the quality of model responses. GitHub Actions runs this structural check; use the manual scenarios in [tests/behavioral-cases.md](tests/behavioral-cases.md) to assess behavior in each target host.
 
 ## Scope
 
