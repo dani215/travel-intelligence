@@ -31,11 +31,11 @@ Use local-language sources, municipal operators, local media, neighborhood busin
 
 ## Flights and costs
 
-For `flights`, state search time and assumptions for passengers, bags, dates, currency, and departure radius. Compare nearby airports, flexible dates when allowed, direct and connecting routes, airline sites, aggregators, and mixed-carrier options. Separate fare, bags, seats, fees, ground transport, parking/fuel, pre-flight lodging, airport transfers, and destination transport. Rank three outcomes: **absolute cheapest**, **cheapest sensible**, and **best value**. Treat unverified checkout prices as indicative, never as the confirmed cheapest fare. Show self-transfer risk and realistic buffers.
+For `flights`, identify inputs that can change the result: travel dates or date flexibility, passenger count, departure airport or acceptable radius, and baggage. Ask for missing critical inputs when they prevent a meaningful comparison. If they do not block useful research, state the assumption and label the result accordingly. Never present an exact total as confirmed when a material input is unknown. State search time and currency. Compare nearby airports, flexible dates when allowed, direct and connecting routes, airline sites, aggregators, and mixed-carrier options. Separate fare, bags, seats, fees, ground transport, parking/fuel, pre-flight lodging, airport transfers, and destination transport. Rank three outcomes: **absolute cheapest**, **cheapest sensible**, and **best value**. Treat unverified checkout prices as indicative, never as the confirmed cheapest fare. Show self-transfer risk and realistic buffers.
 
 ## Output contract
 
-Start with a direct recommendation and one-sentence verdict. Then give assumptions, a compact comparison, practical next steps, total costs with currency and checked-at time, risks and fallbacks, and source confidence. Preserve original place names and add local-language forms when useful. Make uncertainty visible when it can change the decision.
+Start with a direct answer. Match the structure to the selected mode and the scale of the request; do not force a travel-plan template onto a short language question. Include costs, currency, and checked-at time only when giving variable prices or a cost estimate. State assumptions, uncertainty, risks, and source confidence where they affect the decision. Link directly to sources for material claims, especially changing prices, schedules, safety guidance, and legal rules. Prefer primary sources for high-risk claims; say what could not be verified. Preserve original place names and add local-language forms when useful.
 
 ## Learn new capabilities safely
 
@@ -44,11 +44,11 @@ At the start of each request, compare it with [references/capability-index.md](r
 ## Common mistakes
 
 - Calling a famous attraction “secret” or “known only to locals” without evidence.
-- Giving a fare, timetable, menu price, opening hour, or dialect claim without a checked date.
+- Giving a fare, timetable, menu price, opening hour, or dialect claim without a checked date and direct source when one is available.
 - Treating a cabin bag, self-transfer, parking, or airport ride as free or riskless.
 - Overusing slang or fake regional pronunciation to sound local.
 - Treating a single request as a permanent user preference or new skill.
 
 ## Example
 
-`Use Travel Intelligence: flights from Katowice/Kraków/Ostrava to Marseille, 6–10 October 2026, two people, cabin bags only.` Return verified assumptions, nearby-airport alternatives, three ranked flight verdicts, full door-to-door costs, transfer details, risks, checked-at time, and a clear booking recommendation.
+`Use Travel Intelligence: flights from Katowice/Kraków/Ostrava to Marseille, 6–10 October 2026, two people, cabin bags only.` Return stated assumptions, nearby-airport alternatives, three ranked flight verdicts, full door-to-door costs, source links, transfer details, risks, checked-at time, and a clear booking recommendation.
